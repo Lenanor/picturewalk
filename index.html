@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+</head>
+<body>
+	<div class="start-container">
+		<header> 
+			<p id="title-text"> GÅ EN BILD </p>
+			<img id="glass-img" src="img/glas.png" alt="walking path shaped like a glass">
+		</header>
+		<div id="text-container"> 
+			<div id="text1">
+				<p class="paragraf"> <span class="tape">LÅT DINA PROMENADER TA EN NY RIKTNING </span> </p>
+			</div>
+			<div id="text2">
+				<p class="paragraf"> <span class="tape">DU FÅR EN "KARTA" ATT FÖLJA - DEN BESTÅR AV EN BILD</span> </p>
+			</div>
+			<div id="text3">
+				<p class="paragraf"> <span class="tape">RÖR DIG SÅ ATT DIN PROMENAD RITAR UPP BILDEN PÅ DEN RIKTIGA KARTAN </span> </p>
+			</div>
+				<button id="btn"> KÖR IGÅNG!</button>
+		</div>
+	</div>
+	<div class="map-container">
+		<div id="map"> <p id="background-text"> ETT ÖGONBLICK,<br> KARTAN LADDAS...</p> </div>
+		<div id="pic-btn">
+			<img id="pic" src="img/ny-svan.png" alt="swan">
+			<button id="btn-done"> JAG HAR GÅTT KLART </button>
+		</div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/
+	js?key=AIzaSyBb948hGVk4r0VgPx9poxJ0I-F8_O1IlLQ&libraries=drawing"></script> 
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="geolocation.js" type="text/javascript"></script>
+</body>
+</html>

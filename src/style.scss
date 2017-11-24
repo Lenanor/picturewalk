@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700');
+
+// Mixin for break points
+@mixin breakLength($minLength,$maxLength) {
+	@media (min-width: $minLength) and (max-width: $maxLength) {
+		@content;
+	}
+}
+@mixin breakHeight($minHight,$maxHight) {
+	@media (min-height: $minHight) and (max-height: $maxHight) {
+		@content;
+	}
+}
+
+$main-font: 'Arimo', sans-serif;
+$beige: #f5f5ec;
+$white: white;
+$blue: #2d70f1;
+$tomato: tomato;
+
+html,body {
+	width: 100%;
+	height: 100%;	
+	margin: 0;
+	background-color: $beige;
+
+}
+
+// ***************** START VIEW STYLE  ******************
+
+header{
+	height: auto;
+}
+.start-container{
+	width: 100%;
+	height: 100%;
+	#title-text{
+		color: $tomato;
+		font-family: $main-font;
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: 700;
+		letter-spacing: 0.4em;
+	}
+	#glass-img{
+		width: 40%;
+		display: block;
+		margin: 0 auto;
+		@include breakLength(750px, 9000px){
+			width: 20%;
+		}
+	}
+	#text-container{
+		height: 60%;
+		width: 75%;
+		margin: 0 auto;
+		margin: 3em em;
+		@include breakLength(750px, 9000px){
+			margin-top: 5em;
+		}
+	}
+	.paragraf{
+		text-align: center;
+		font-size: 18px;
+		font-family: $main-font;
+		font-weight: 400;
+		@include breakLength(0px, 330px){
+			font-size: 16px;
+		}
+		@include breakLength(750px, 9000px){
+			font-size: 24px;
+		}
+	}
+	.tape{
+		color: $tomato;
+		padding:3px; 
+	}
+}
+
+// **************  BUTTON STYLE  **************
+
+#btn, #btn-done {
+	// top: 50px;
+	display: block;
+	margin: 0 auto;
+	border: none;	
+  	-webkit-border-radius: 0;
+  	-moz-border-radius: 0;
+  	border-radius: 0px;
+  	font-family: $main-font;
+  	color: #ffffff;
+  	font-size: 18px;
+  	background: black;
+  	padding: 13px 20px 10px 20px;
+  	text-decoration: none;
+  	&:hover {
+	  background:$tomato;
+	  text-decoration: none;
+	  border:none;	
+	}
+}
+#btn{
+	@include breakHeight(660px, 2000px){
+		margin-top: 4em;
+	}
+}
+
+
+// ***************  MAP VIEW STYLE  ***************
+
+.map-container{
+	width: 100%;
+	#map{
+		width: 100%; 
+		height: 60vh;
+		background-color: $tomato;
+		font-family: $main-font;
+		text-align: center;
+		#background-text{
+			margin: 0;
+			padding-top: 30%;
+			top: 100px; 
+			color: $white;
+			@include breakLength(750px, 9000px){
+				padding-top: 15%;
+			}
+		}
+	}
+	#pic{
+		width: 45%;
+		margin: 0.5em auto;
+		display: block;
+		@include breakLength(750px, 9000px){
+			width: 40%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
